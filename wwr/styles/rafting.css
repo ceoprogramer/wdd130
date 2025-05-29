@@ -152,7 +152,7 @@ main, footer {
 	display: flex;
 	
     flex-direction: row;
-    justify-content: middle;
+    justify-content: center;
     align-items: stretch;
 
 
