@@ -188,7 +188,12 @@ main, footer {
     text-align:center;
 }
 
+  figcaption {
+    margin-top: 10px;
+    color: #233f80;
+    text-align:center;
 
+}
 
 
 
