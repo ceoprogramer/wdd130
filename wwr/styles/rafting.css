@@ -16,6 +16,10 @@ header {
 	max-width: 1000px;
 }
 
+ 
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -32,6 +36,10 @@ header {
 h1 {
 	font-size: 2rem;
 	font-family: Acme, Arial, sans-serif;
+    text-align:center;
+}
+
+h2 {
     text-align:center;
 }
 
@@ -139,12 +147,12 @@ main, footer {
 }    
 
 .flex-container {
-	border: 3px dashed darkcyan;
+	border: 1px dashed darkcyan;
 	background-color: lightyellow;
 	display: flex;
 	
     flex-direction: row;
-    justify-content: center;
+    justify-content: middle;
     align-items: stretch;
 
 
