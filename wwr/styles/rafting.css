@@ -17,9 +17,6 @@ header {
 }
 
  
-
-
-
 *{
   margin: 0;
   padding: 0;
@@ -40,7 +37,27 @@ h1 {
 }
 
 h2 {
+    font-size: 20px;
     text-align:center;
+    padding: 20px;
+}
+
+.text-gray{
+    font-size: 18px;
+	font-family: Acme, Arial, sans-serif;
+    text-align:center;
+    color:rgb(100, 100, 100);
+    padding:10px;
+
+}
+.text-bold{
+    font-size: 20px;
+    font-weight: bold;
+	font-family: Acme, Arial, sans-serif;
+    text-align:center;
+    color:rgb(60, 60, 60);
+    padding: 10px;
+
 }
 
 .navigation {
@@ -125,7 +142,26 @@ main, footer {
     background-color: var(--primary-color);
     color: #ffffff;
 }
+.grid-container-banner{
+    display: grid;
+    grid-template-columns: 950px;
+    background-color:#c4ccd2;
+    
+}
+.grid-item-banner {
+    background-color: #F5F3F5;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 18px;
+    text-align:left;
+}
 
+.grid-item-image-banner {
+  width: 88%;
+  height: 70%;
+  object-fit: fill; /* O fill, contain, scale-down, none */
+  object-position: center; /* O top, bottom, left, right, etc. */
+}    
 .grid-container {
     display: grid;
     grid-template-columns: 250px 300px 250px;
@@ -139,16 +175,32 @@ main, footer {
     font-size: 18px;
     text-align:left;
 }
-.grid-item-imagen {
+.grid-item-image {
   width: 100%;
   height: 100%;
   object-fit: contain; /* O fill, contain, scale-down, none */
   object-position: center; /* O top, bottom, left, right, etc. */
+ 
 }    
+
+.grid-container-contact {
+    display: grid;
+    grid-template-columns: 410px 410px;
+    background-color:#a9b8c3;
+    padding: 10px;
+}
+.grid-item-contact {
+    background-color: #ffffff;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    text-align:left;
+}
+
 
 .flex-container {
 	border: 1px dashed darkcyan;
-	background-color: lightyellow;
+	background-color: #a9b8c3;
 	display: flex;
 	
     flex-direction: row;
@@ -164,6 +216,14 @@ main, footer {
 	border: 1px solid rgb(0 0 0 / 20%);
 	padding: 0.5rem;
 	background-color: #bbb;
+	color: #333;
+}
+.flex-item-form {
+	width: 700px; 
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 / 20%);
+	padding: 10px;
+	background-color: #f4f2f2;
 	color: #333;
 }
 
@@ -195,6 +255,95 @@ main, footer {
 
 }
 
+.btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: var(--secondary-color);
+  height: 50px;
+  
+  padding: 0 35px;
+  line-height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: center;
+  
+}
+
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+  display: grid;
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
 
 
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+}
+
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 1.3em;
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+button {
+  margin: 1rem;
+  background-color: rgb(7, 7, 175);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: rgb(235, 162, 28);
+}
 
