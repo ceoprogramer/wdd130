@@ -262,12 +262,10 @@ main, footer {
   text-align: center;
   background: var(--secondary-color);
   height: 50px;
-  
   padding: 0 35px;
   line-height: 50px;
   border-radius: 8px;
   cursor: pointer;
-  position: center;
   
 }
 
