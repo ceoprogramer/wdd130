@@ -57,7 +57,7 @@
                 <p class="text-bold">Boston</p> 
                 <div class="text-gray grid-item-image">
                     <img src="images/location_on.png" alt="Location"> 177 Huntington Ave Ste 1703 <br>
-                    <img src="images/email.png" alt="email"> contact-us@company.com <br>
+                    <img src="images/email.png" alt="email"> contact-us@rafting.com <br>
                     <img src="images/phone_in_talk.png" alt="phone"> +1-617-555-0108 
                 </div>    
                
@@ -79,11 +79,31 @@
                         
                         <div class = "form-item column1"><label>Fullname: <input type="text" id="fullname" name="fullname"></label></div> 
                         <div class = "form-item column1"><label>Email: <input type="email" id="useremail" name="useremail"></label></div>
-                            
+                        <div class = "form-item column1"><label>Phone: <input type="phone" id="usrphone" name="usrphone"></label></div>    
+                        <div class = "form-item column2">
+                            <label for="label-trip">Trip you're interested in:</label>
+                            <select id="trip" name="trip_name" required>
+                                <option value="">-- Select an adventure --</option>
+                                <option value="single-day">Single Day Trip</option>
+                                <option value="multiple-day">Multiple Day Trip</option>
+                                <option value="families">Families</option>
+                                <option value="groups">Groups</option>
+                            </select>
+                        </div>
+
                     </fieldset>    
                     <fieldset>
                         <legend>Message</legend>
-                        <div class="form-item column1"><label>Enter message: <input type="text" id="msg" name="msg"></label></div>    
+                        <div class="form-item column1"><label>Enter message: <input type="text" id="msg" name="msg"></label></div>                           
+                    </fieldset>  
+
+                    <fieldset>
+                        <legend>Newsletter. Subscribe with Us</legend> 
+                         <div>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="Yes">
+                            <label for="newsletter">Yes, I want to suscribe to newsletter</label>
+                        </div>
+
                     </fieldset>  
                     <button type="submit">Send message</button>
                 </form>    
