@@ -145,7 +145,8 @@ main, footer {
 .grid-container-banner{
     display: grid;
     grid-template-columns: 950px;
-    background-color:#c4ccd2;
+    background-color:#cbd4dba5;
+   
     
 }
 .grid-item-banner {
@@ -158,9 +159,9 @@ main, footer {
 
 .grid-item-image-banner {
   width: 88%;
-  height: 70%;
+  height: 90%;
   object-fit: fill; /* O fill, contain, scale-down, none */
-  object-position: center; /* O top, bottom, left, right, etc. */
+  object-position: bottom; /* O top, bottom, left, right, etc. */
 }    
 .grid-container {
     display: grid;
@@ -206,7 +207,6 @@ main, footer {
   align-items: stretch;
   padding: 20px;
 
-
 }
 
 .flex-item {
@@ -231,6 +231,27 @@ main, footer {
   height: 100%;
   object-fit: contain; /* O fill, contain, scale-down, none */
   object-position: center; /* O top, bottom, left, right, etc. */
+}
+
+
+.flex-container-photo {
+  display: flex;
+	background-color: #ffffff;
+	flex-direction: row;
+  justify-content:left;
+  align-items: stretch;
+  padding: 10px;
+
+}
+
+.flex-item-photo {
+	width: 150px; 
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 / 20%);
+	padding: 0.5rem;
+	background-color: #c9dcf0f9;
+	color: #333;
+  
 }
 
 .grid-container-footer {
