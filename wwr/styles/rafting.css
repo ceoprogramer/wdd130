@@ -180,7 +180,7 @@ main, footer {
   width: 100%;
   height: 100%;
   object-fit: contain; /* O fill, contain, scale-down, none */
-  object-position: center; /* O top, bottom, left, right, etc. */
+  object-position: top; /* O top, bottom, left, right, etc. */
  
 }    
 
@@ -230,7 +230,7 @@ main, footer {
   width: 100%;
   height: 100%;
   object-fit: contain; /* O fill, contain, scale-down, none */
-  object-position: center; /* O top, bottom, left, right, etc. */
+  object-position: top; /* O top, bottom, left, right, etc. */
 }
 
 
