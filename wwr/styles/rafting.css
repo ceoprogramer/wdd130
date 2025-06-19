@@ -810,3 +810,35 @@ figcaption {
   font-weight: 600;
   padding-bottom: 20px;
 }
+
+
+   table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 25px auto;
+            box-shadow: 0 2px 10px rgba(161, 197, 230, 0.1);
+            background-color: #eefbfd;
+            align-content: center;
+        }
+  caption {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #0056b3;
+      text-align: left;
+      padding: 10px 0;
+  }
+  th, td {
+      border: 1px solid #5e5d5d;
+      padding: 25px;
+      text-align: left;
+  }
+  th {
+      background-color: #e2e2e2;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+  }
+  td strong {
+      color: #0056b3;
+  }
