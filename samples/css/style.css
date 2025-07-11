@@ -1,0 +1,21 @@
+.navigation { 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1 1 auto;
+ }
+
+.navigation a {
+    display: block;
+    color: #7e90df;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+     flex: 1 1 auto;
+} 
+aside { 
+  border: 1px solid #d93939;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 3;
+}

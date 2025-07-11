@@ -1,0 +1,232 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variables CSS para colores */
+:root {
+    --primary-color: #224268; /* Azul oscuro del header y nav */
+    --secondary-color: #007bff; /* Azul de enlaces */
+    --text-color: #333;
+    --light-text-color: #f0f0f0; /* Texto claro en header/nav/footer */
+    --card-bg: #f9f9f9; /* Fondo de las tarjetas */
+    --border-color: #eee;
+    --footer-bg: #222; /* Fondo del footer, similar al header */
+}
+
+/* Estilos Generales y Reset Básico */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Un gris muy claro para el fondo general */
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--light-text-color); /* Por defecto, para elementos con fondo oscuro */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Principal */
+.main-header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.main-header .author-name {
+    color: #ffd700; /* Un color amarillo/dorado para el nombre */
+}
+
+/* Navegación */
+.main-nav {
+    background-color: var(--text-color); /* Un gris oscuro casi negro como en la imagen */
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos de la lista */
+    gap: 2rem; /* Espacio entre los ítems del menú */
+    flex-wrap: wrap; /* Permite que los ítems se envuelvan en pantallas pequeñas */
+}
+
+.main-nav li a {
+    color: var(--light-text-color);
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav li a:hover {
+    background-color: var(--primary-color); /* Cambia el color de fondo al pasar el ratón */
+    text-decoration: none;
+}
+
+/* Contenido Principal con Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Una columna más ancha para "About Me", otra más estrecha para "Resources" */
+    gap: 1.5rem; /* Espacio entre las tarjetas */
+    padding: 1.5rem;
+    max-width: 1200px; /* Limita el ancho máximo del contenido */
+    margin: 1.5rem auto; /* Centra el grid en la página */
+}
+
+/* Estilo de las tarjetas (About Me y Resources) */
+.about-me-card, .resources-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    min-height: 400px; /* Altura mínima para que se vean bien */
+    display: flex;
+    flex-direction: column; /* Para apilar el título y el contenido */
+}
+
+.about-me-card h2, .resources-card h2 {
+    background-color: var(--primary-color); /* Fondo azul oscuro para los títulos de las tarjetas */
+    color: var(--light-text-color);
+    padding: 0.8rem 1rem;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem; /* Expande el fondo del título */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Contenido interno de la tarjeta "About Me" (Grid para texto e imagen) */
+.about-me-card .card-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Texto más ancho, imagen más estrecha */
+    gap: 1.5rem;
+}
+
+.about-me-card .text-content {
+    /* Estilos para el texto de "About Me" */
+}
+
+.about-me-card .text-content p {
+    margin-bottom: 1rem;
+}
+
+.about-me-card .text-content h3 {
+    color: var(--text-color); /* H3 dentro del contenido de la tarjeta */
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+}
+
+.about-me-card .image-content {
+    text-align: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Ligeros bordes redondeados en la imagen de perfil */
+    border: 1px solid var(--border-color); /* Borde sutil */
+}
+
+.flag-image {
+    max-width: 100px; /* Tamaño de la bandera */
+    height: auto;
+    display: block; /* Para centrar con margin auto */
+    margin: 1rem auto 0.5rem auto;
+    border: 1px solid var(--border-color);
+}
+
+.flag-caption {
+    font-size: 0.8em;
+    color: #666;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Estilos para la tarjeta "Web Dev Resources" */
+.resources-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resources-card li {
+    margin-bottom: 0.5rem;
+}
+
+.resources-card li a {
+    color: var(--secondary-color);
+    display: block;
+    padding: 0.2rem 0;
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9em;
+}
+
+.main-footer p {
+    margin: 0.5rem 0;
+}
+
+.main-footer .fas {
+    color: var(--light-text-color); /* Color de los íconos */
+    margin: 0 0.3rem;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .about-me-card .card-content {
+        grid-template-columns: 1fr; /* Texto e imagen apilados en "About Me" */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Menú vertical en pantallas pequeñas */
+        gap: 0;
+    }
+
+    .main-nav li a {
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header h1 {
+        font-size: 1.5em;
+    }
+
+    .about-me-card h2, .resources-card h2 {
+        font-size: 1.3em;
+    }
+}
